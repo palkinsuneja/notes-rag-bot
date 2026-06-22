@@ -27,8 +27,14 @@ def load_and_chunk_documents(folder_path: str):
         loader = PyPDFLoader(str(pdf_file))
         documents.extend(loader.load())
         print(f"  Loaded: {pdf_file.name}")
+    # .docx files load karo
+    for docx_file in folder.glob("*.docx"):
+        from langchain_community.document_loaders import Docx2txtLoader
+        loader = Docx2txtLoader(str(docx_file))
+        documents.extend(loader.load())
+        print(f"  Loaded: {docx_file.name}")
     if not documents:
-        raise ValueError(f"No .txt or .pdf files found in {folder_path}")
+        raise ValueError(f"No .txt, .pdf, or .docx files found in {folder_path}")
     print(f"Total documents loaded: {len(documents)}")
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
