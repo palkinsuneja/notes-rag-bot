@@ -1,0 +1,168 @@
+SOFTWARE PROJECT MANAGEMENT - UNIT NOTES
+
+TOPIC 1: INTRODUCTION TO SOFTWARE PROJECT MANAGEMENT
+
+Software Project Management (SPM) is the process of planning, organizing, and managing
+resources to successfully complete software project goals within scope, time, and budget
+constraints. Unlike traditional project management, SPM deals with intangible products,
+making progress harder to measure visually.
+
+Key characteristics of software projects:
+1. Invisibility - software progress is not visible like construction projects
+2. Complexity - software systems have more complexity per dollar than other engineered systems
+3. Flexibility - software is easy to change, which leads to scope creep
+4. Conformity - software must conform to requirements of business and human users
+
+The four Ps of project management are: People, Product, Process, and Project.
+
+
+TOPIC 2: PROJECT LIFE CYCLE
+
+The software project life cycle consists of the following phases:
+
+1. Initiation - feasibility study, project charter creation, stakeholder identification
+2. Planning - scope definition, scheduling, resource allocation, risk planning
+3. Execution - actual development work, team coordination
+4. Monitoring and Controlling - tracking progress, managing changes, quality control
+5. Closure - final delivery, documentation, post-project review
+
+Feasibility study evaluates four dimensions: Technical feasibility, Economic feasibility,
+Legal feasibility, and Operational feasibility (often called TELOS when Schedule feasibility
+is included).
+
+
+TOPIC 3: PROJECT ESTIMATION TECHNIQUES
+
+Effort estimation is critical for project success. Common techniques include:
+
+1. Expert Judgment - based on experience of senior team members
+2. Analogous Estimation - comparing with similar past projects
+3. Function Point Analysis (FPA) - measures functionality from user perspective
+4. COCOMO Model (Constructive Cost Model) - mathematical model using lines of code
+
+COCOMO Model has three modes:
+- Organic mode: small teams, familiar environment, simple projects
+- Semi-detached mode: medium-sized projects, mixed team experience
+- Embedded mode: complex projects, tight constraints, large teams
+
+Basic COCOMO formula: Effort = a * (KLOC)^b person-months
+Where KLOC = thousands of lines of code, and a, b are constants depending on project mode.
+
+
+TOPIC 4: RISK MANAGEMENT IN SOFTWARE PROJECTS
+
+Risk management involves identifying, analyzing, and responding to project risks.
+
+Types of risks:
+1. Project risks - affect schedule and resources (e.g., staff turnover, budget cuts)
+2. Product risks - affect quality of software being built (e.g., requirement changes)
+3. Business risks - affect the organization (e.g., market changes, competitor products)
+
+Risk management process steps:
+1. Risk Identification - listing potential risks using brainstorming, checklists
+2. Risk Analysis - assessing probability and impact of each risk
+3. Risk Planning - creating mitigation strategies for high-priority risks
+4. Risk Monitoring - continuously tracking identified risks throughout project
+
+Risk exposure is calculated as: Risk Exposure = Probability of risk * Loss if risk occurs
+
+
+TOPIC 5: PROJECT SCHEDULING
+
+Scheduling involves determining the timeline for project activities.
+
+Key tools used in scheduling:
+1. Gantt Charts - bar charts showing start/end dates of tasks
+2. PERT (Program Evaluation Review Technique) - network diagram showing task dependencies
+3. CPM (Critical Path Method) - identifies the longest sequence of dependent tasks
+
+Critical Path is the sequence of activities that determines the minimum project duration.
+Any delay in critical path activities directly delays the entire project.
+
+Float (or Slack) is the amount of time a task can be delayed without affecting the project
+finish date. Critical path activities have zero float.
+
+
+TOPIC 6: SOFTWARE CONFIGURATION MANAGEMENT (SCM)
+
+SCM is the discipline of tracking and controlling changes in software during development.
+
+Core SCM activities:
+1. Identification - identifying configuration items (code, docs, requirements)
+2. Version Control - managing different versions of artifacts (e.g., Git)
+3. Change Control - formal process for proposing, evaluating, and approving changes
+4. Configuration Auditing - verifying that the software meets requirements
+5. Status Reporting - keeping stakeholders informed of changes
+
+A baseline is a formally reviewed and agreed-upon version of a configuration item that
+serves as the basis for further development.
+
+
+TOPIC 7: SOFTWARE QUALITY MANAGEMENT
+
+Quality management ensures the software meets specified requirements and user expectations.
+
+Quality Assurance (QA) vs Quality Control (QC):
+- QA is process-oriented, preventive, focuses on improving development process
+- QC is product-oriented, detective, focuses on identifying defects in the product
+
+ISO 9000 is a series of quality standards that provide a framework for quality management
+systems applicable to software organizations.
+
+Capability Maturity Model (CMM) has five levels:
+1. Initial - ad hoc, chaotic processes
+2. Repeatable - basic project management processes established
+3. Defined - processes documented and standardized
+4. Managed - quantitative measures used to control quality
+5. Optimizing - continuous process improvement based on feedback
+
+
+TOPIC 8: AGILE PROJECT MANAGEMENT
+
+Agile is an iterative approach to software project management emphasizing flexibility,
+customer collaboration, and rapid delivery.
+
+The Agile Manifesto values:
+1. Individuals and interactions over processes and tools
+2. Working software over comprehensive documentation
+3. Customer collaboration over contract negotiation
+4. Responding to change over following a plan
+
+Scrum framework roles:
+- Product Owner - represents stakeholders, manages product backlog
+- Scrum Master - facilitates the process, removes impediments
+- Development Team - self-organizing team that builds the product
+
+A Sprint is a fixed time-box (usually 2-4 weeks) during which a specific set of work is
+completed. Sprint Planning, Daily Standups, Sprint Review, and Sprint Retrospective are
+the four key Scrum ceremonies.
+
+
+TOPIC 9: TEAM MANAGEMENT AND ORGANIZATION
+
+Effective team structures in software projects:
+
+1. Democratic Decentralized (DD) - no permanent leader, group consensus decisions
+2. Controlled Decentralized (CD) - defined leader for sub-groups, less communication
+3. Controlled Centralized (CC) - clear single leader, top-down communication
+
+Team size and communication paths relationship: as team size grows, communication
+overhead grows quadratically. Formula for communication channels = n(n-1)/2, where n is
+the number of team members.
+
+
+TOPIC 10: PROJECT MONITORING AND EARNED VALUE ANALYSIS
+
+Earned Value Analysis (EVA) measures project performance by comparing planned work to
+actual work completed.
+
+Key terms:
+- Planned Value (PV) - budgeted cost of work scheduled
+- Earned Value (EV) - budgeted cost of work actually performed
+- Actual Cost (AC) - actual cost incurred for work performed
+
+Performance Indices:
+- Cost Performance Index (CPI) = EV / AC (CPI > 1 means under budget)
+- Schedule Performance Index (SPI) = EV / PV (SPI > 1 means ahead of schedule)
+
+If CPI < 1, the project is over budget. If SPI < 1, the project is behind schedule.
